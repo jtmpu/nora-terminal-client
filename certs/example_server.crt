@@ -1,0 +1,101 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=EX, ST=EX, L=DO_NOT_USE, O=DO_NOT_USE, OU=DO_NOT_USE, CN=DO_NOT_USE CA/name=NORA_EXAMPLE_DO_NOT_USE/emailAddress=DO_NOT_USE
+        Validity
+            Not Before: Jan 18 21:47:32 2017 GMT
+            Not After : Jan 16 21:47:32 2027 GMT
+        Subject: C=EX, ST=EX, L=DO_NOT_USE, O=DO_NOT_USE, OU=DO_NOT_USE, CN=example_server/name=NORA_EXAMPLE_DO_NOT_USE/emailAddress=DO_NOT_USE
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:bc:33:51:0d:d2:4c:35:71:8a:02:7d:ec:24:87:
+                    b1:5e:0b:c6:f5:40:95:9c:8b:a1:91:ec:30:08:2a:
+                    7e:03:84:bc:29:3b:f8:d1:4d:37:ba:02:2c:0f:ef:
+                    08:96:33:31:01:e2:83:ca:97:66:59:a0:38:d6:b4:
+                    b4:d8:ee:97:6e:97:ef:10:7f:4e:a5:81:87:be:91:
+                    58:6a:41:f6:a6:ca:0b:24:d9:c0:8d:de:c1:83:98:
+                    d5:6c:bb:77:fe:e3:98:7b:50:46:59:c0:4b:f7:ac:
+                    cd:b1:4e:ee:95:1c:f3:c1:d7:3b:e3:b3:75:46:81:
+                    43:64:ab:76:f3:93:51:9e:23:73:03:cf:f2:c8:41:
+                    35:9e:07:a0:6b:5e:d0:39:99:84:8e:0a:dd:86:a3:
+                    4c:75:58:25:aa:4e:82:a8:f3:b9:c4:f9:17:1c:b9:
+                    44:f9:ff:e2:87:11:21:b0:6c:3f:cf:36:2c:66:cf:
+                    50:d9:ac:96:ed:4f:a4:d3:71:56:dd:d0:19:e4:ba:
+                    de:60:7c:fb:fc:2b:f6:c1:2b:c5:c7:40:5e:73:de:
+                    a2:f5:9f:98:d9:7b:87:4b:6b:d3:0e:b5:0b:9e:1a:
+                    59:23:d8:1b:45:3f:a3:71:a6:25:c6:a8:26:9d:b1:
+                    24:91:32:35:12:62:c7:49:d5:01:d4:e7:2e:e8:33:
+                    df:bb
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Server
+            Netscape Comment: 
+                Easy-RSA Generated Server Certificate
+            X509v3 Subject Key Identifier: 
+                95:48:BC:D6:7F:78:F9:80:FF:FE:1E:61:F3:60:39:9E:E3:83:45:61
+            X509v3 Authority Key Identifier: 
+                keyid:22:09:EC:9A:A9:2B:01:2D:97:D4:83:FA:9D:E1:EF:E6:F9:50:5C:FC
+                DirName:/C=EX/ST=EX/L=DO_NOT_USE/O=DO_NOT_USE/OU=DO_NOT_USE/CN=DO_NOT_USE CA/name=NORA_EXAMPLE_DO_NOT_USE/emailAddress=DO_NOT_USE
+                serial:D8:D0:23:15:D3:1D:06:DF
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:example_server
+    Signature Algorithm: sha256WithRSAEncryption
+         3b:c1:3c:4c:b3:72:7a:e6:71:cc:d5:7c:4d:ad:ad:11:e4:07:
+         82:6e:db:b5:11:5e:ec:b6:e7:02:4d:04:25:49:d6:06:2c:c3:
+         0d:4d:20:29:6e:5f:81:da:39:09:2c:9c:06:cc:89:db:44:22:
+         50:76:91:e2:a2:b7:9c:e9:a9:6f:63:31:bd:75:11:c3:89:61:
+         bc:a4:21:bd:45:df:c5:14:8c:b9:b9:24:99:65:24:cc:e5:74:
+         73:17:93:e2:10:3a:b6:8e:68:aa:ba:d0:7e:38:2f:00:12:88:
+         16:0b:97:76:ca:dd:2d:84:0a:99:e4:65:fb:96:4e:c0:90:a1:
+         01:ab:1b:78:ec:46:fa:7e:2f:4b:25:57:8d:17:df:8b:2e:4d:
+         d4:5a:73:51:c3:d3:f5:39:43:fd:f9:f5:11:0b:89:33:c7:3c:
+         a8:ba:b4:08:ab:a3:ba:4a:0a:87:88:bb:10:e9:2a:24:23:e5:
+         99:c4:e6:05:48:e1:a2:62:7f:a2:df:db:2a:2f:6f:9d:aa:33:
+         97:ae:f7:59:51:7d:fb:b8:cd:f4:36:29:ee:eb:b0:ce:51:b5:
+         fc:bf:e3:7e:bd:f7:81:78:d2:bf:02:41:10:6c:cb:03:6a:c5:
+         64:3e:44:c1:60:46:ef:39:e3:32:3d:9f:34:42:ec:ad:8b:d1:
+         9d:18:7c:8e
+-----BEGIN CERTIFICATE-----
+MIIFdjCCBF6gAwIBAgIBATANBgkqhkiG9w0BAQsFADCBrjELMAkGA1UEBhMCRVgx
+CzAJBgNVBAgTAkVYMRMwEQYDVQQHFApET19OT1RfVVNFMRMwEQYDVQQKFApET19O
+T1RfVVNFMRMwEQYDVQQLFApET19OT1RfVVNFMRYwFAYDVQQDFA1ET19OT1RfVVNF
+IENBMSAwHgYDVQQpFBdOT1JBX0VYQU1QTEVfRE9fTk9UX1VTRTEZMBcGCSqGSIb3
+DQEJARYKRE9fTk9UX1VTRTAeFw0xNzAxMTgyMTQ3MzJaFw0yNzAxMTYyMTQ3MzJa
+MIGvMQswCQYDVQQGEwJFWDELMAkGA1UECBMCRVgxEzARBgNVBAcUCkRPX05PVF9V
+U0UxEzARBgNVBAoUCkRPX05PVF9VU0UxEzARBgNVBAsUCkRPX05PVF9VU0UxFzAV
+BgNVBAMUDmV4YW1wbGVfc2VydmVyMSAwHgYDVQQpFBdOT1JBX0VYQU1QTEVfRE9f
+Tk9UX1VTRTEZMBcGCSqGSIb3DQEJARYKRE9fTk9UX1VTRTCCASIwDQYJKoZIhvcN
+AQEBBQADggEPADCCAQoCggEBALwzUQ3STDVxigJ97CSHsV4LxvVAlZyLoZHsMAgq
+fgOEvCk7+NFNN7oCLA/vCJYzMQHig8qXZlmgONa0tNjul26X7xB/TqWBh76RWGpB
+9qbKCyTZwI3ewYOY1Wy7d/7jmHtQRlnAS/eszbFO7pUc88HXO+OzdUaBQ2SrdvOT
+UZ4jcwPP8shBNZ4HoGte0DmZhI4K3YajTHVYJapOgqjzucT5Fxy5RPn/4ocRIbBs
+P882LGbPUNmslu1PpNNxVt3QGeS63mB8+/wr9sErxcdAXnPeovWfmNl7h0tr0w61
+C54aWSPYG0U/o3GmJcaoJp2xJJEyNRJix0nVAdTnLugz37sCAwEAAaOCAZowggGW
+MAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgZAMDQGCWCGSAGG+EIBDQQnFiVF
+YXN5LVJTQSBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRlMB0GA1UdDgQWBBSV
+SLzWf3j5gP/+HmHzYDme44NFYTCB4wYDVR0jBIHbMIHYgBQiCeyaqSsBLZfUg/qd
+4e/m+VBc/KGBtKSBsTCBrjELMAkGA1UEBhMCRVgxCzAJBgNVBAgTAkVYMRMwEQYD
+VQQHFApET19OT1RfVVNFMRMwEQYDVQQKFApET19OT1RfVVNFMRMwEQYDVQQLFApE
+T19OT1RfVVNFMRYwFAYDVQQDFA1ET19OT1RfVVNFIENBMSAwHgYDVQQpFBdOT1JB
+X0VYQU1QTEVfRE9fTk9UX1VTRTEZMBcGCSqGSIb3DQEJARYKRE9fTk9UX1VTRYIJ
+ANjQIxXTHQbfMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIFoDAZBgNV
+HREEEjAQgg5leGFtcGxlX3NlcnZlcjANBgkqhkiG9w0BAQsFAAOCAQEAO8E8TLNy
+euZxzNV8Ta2tEeQHgm7btRFe7LbnAk0EJUnWBizDDU0gKW5fgdo5CSycBsyJ20Qi
+UHaR4qK3nOmpb2MxvXURw4lhvKQhvUXfxRSMubkkmWUkzOV0cxeT4hA6to5oqrrQ
+fjgvABKIFguXdsrdLYQKmeRl+5ZOwJChAasbeOxG+n4vSyVXjRffiy5N1FpzUcPT
+9TlD/fn1EQuJM8c8qLq0CKujukoKh4i7EOkqJCPlmcTmBUjhomJ/ot/bKi9vnaoz
+l673WVF9+7jN9DYp7uuwzlG1/L/jfr33gXjSvwJBEGzLA2rFZD5EwWBG7znjMj2f
+NELsrYvRnRh8jg==
+-----END CERTIFICATE-----
