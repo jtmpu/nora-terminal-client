@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import sys
 import ConfigParser
 import os
 import socket
@@ -6,9 +7,15 @@ import ssl
 import argparse
 
 import norac.connection
+import norac.modules.add_note as add_note
 
 DEFAULT_CONFIG_NAME="norac_default.cfg"
 OVERRIDE_CONFIG_NAME="norac.cfg"
+
+def print_response(response):
+    print("Code: %d" % response["result_code"])
+    print("Msg : %s" % response["result_msg"])
+    print("Data: %s" % response["data"])
 
 # Parse Configurations
 config = ConfigParser.ConfigParser()
@@ -33,17 +40,31 @@ if not config.getboolean("security", "verify"):
     print("WARNING: NOT VERIFYING SERVER'S AUTHENTICITY")
     print("")
 
-# Check for arguments
-parser = argparse.ArgumentParser()
-parser.add_argument("-c", "--command", type=str, help="Get information about all or a command on the server. (Too see available commands, use the 'all' command.)")
-args = parser.parse_args()
 
+# Registers all modules the client supports.
 connection = norac.connection.Connection()
 connection.init(config)
+modules = {}
+modules["add_note"] = add_note.AddNoteModule(config, connection)
 
-if args.command:
-    data = ""
-    if args.command != "all":
-        data = args.command
-    response = connection.send_request({ "command" : "commands", "meta" : [], "data" : data })
-    print(response["data"])
+
+# Check for arguments
+parser = argparse.ArgumentParser()
+mutually_exclusive = parser.add_mutually_exclusive_group()
+
+for module in modules.values():
+    mutually_exclusive.add_argument(module.get_shorthand(), module.get_longhand(), help=module.get_description(), type=module.handle)
+
+args = parser.parse_args()
+
+
+# The default action
+if not len(sys.argv) > 1:
+    modules["add_note"].handle("") 
+
+#if args.command:
+    #data = ""
+    #if args.command != "all":
+        #data = args.command
+    #response = connection.send_request({ "command" : "commands", "meta" : [], "data" : data })
+    #print_response(response)

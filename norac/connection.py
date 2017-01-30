@@ -38,7 +38,10 @@ class Connection:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         ssl_sock = self.ssl_context.wrap_socket(sock, server_hostname=self.server_name)
 
-        ssl_sock.connect((self.host, self.port))
+        try:
+            ssl_sock.connect((self.host, self.port))
+        except Exception as e:
+            return { "error_code" : 600, "meta" : [], "result_msg" : "Failed to connect to server.", "data" : e.message }
 
         request_txt = json.dumps(request) 
         
