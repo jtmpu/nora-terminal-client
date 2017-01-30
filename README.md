@@ -42,10 +42,14 @@ Description of the different configurations:
 Restrict the permissions to this file as strict as possible
 
 Set root ownership:
-> chown root:root prepare.sh teardown.sh
+```
+chown root:root prepare.sh teardown.sh
+```
 
 Set permissions
-> chmod 700 prepare.sh teardown.sh
+```
+chmod 700 prepare.sh teardown.sh
+```
 
 ### 4 - Update sudoers 
 The application needs to run the prepare.sh script, but it doesn't want to much privileges. One way is to update the sudoers file to the following example:
