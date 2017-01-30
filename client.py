@@ -7,7 +7,7 @@ import ssl
 import argparse
 
 import norac.connection
-import norac.modules.add_note as add_note
+import norac.modules.module as module
 
 DEFAULT_CONFIG_NAME="norac_default.cfg"
 OVERRIDE_CONFIG_NAME="norac.cfg"
@@ -44,19 +44,18 @@ if not config.getboolean("security", "verify"):
 # Registers all modules the client supports.
 connection = norac.connection.Connection()
 connection.init(config)
-modules = {}
-modules["add_note"] = add_note.AddNoteModule(config, connection)
-
+module_handler = module.Handler(config, connection)
+module_handler.create_modules()
 
 # Check for arguments
 parser = argparse.ArgumentParser()
 mutually_exclusive = parser.add_mutually_exclusive_group()
 
-for module in modules.values():
-    mutually_exclusive.add_argument(module.get_shorthand(), module.get_longhand(), help=module.get_description(), type=module.handle)
+modules = module_handler.get_modules()
+for m in modules.values():
+    mutually_exclusive.add_argument(m.get_shorthand(), m.get_longhand(), help=m.get_description(), type=m.handle)
 
 args = parser.parse_args()
-
 
 # The default action
 if not len(sys.argv) > 1:
